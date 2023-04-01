@@ -2,6 +2,12 @@
 
 Euclid's gcd algorithm
 
+Idea : 
+    -- gcd(a,b) = gcd(b, a%b)
+    -- if b is 0 then a is the gcd.   
+
+    -- lcm(a,b) = (a*b) / gcd(a,b)
+
 Time Complexity : O(logn)  where n = min(a,b);
 
 */
