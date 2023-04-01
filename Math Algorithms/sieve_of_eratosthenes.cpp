@@ -14,7 +14,9 @@ Time complexity : O(n logn)
 #include<vector>
 using namespace std;
 
-vector<int> sieve_of_eratosthenes (int n)
+typedef vector<int> vi;
+
+vi sieve_of_eratosthenes (int n)
 {
 	vector <bool> isPrime (n+1,true);
 	isPrime[0] = isPrime[1] = false;
@@ -28,7 +30,7 @@ vector<int> sieve_of_eratosthenes (int n)
 		}
 	}
 
-	vector<int> result;
+	vi result;
 	for(int i=2;i<=n;i++)
 	{
 		if(isPrime[i])
@@ -39,7 +41,7 @@ vector<int> sieve_of_eratosthenes (int n)
 
 int main()
 {
-	vector <int>  primes = sieve_of_eratosthenes(100);
+	vi  primes = sieve_of_eratosthenes(100);
 	for(auto x : primes){cout<<x<<" ";}
 	
 	return 0;
