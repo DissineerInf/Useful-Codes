@@ -15,6 +15,7 @@
 #include <stack>
 
 #define FOR(n) for(int i=0;i<(n);i++)
+#define FORR(i,s,e) for(int i=(s); i<(e); i++)
 
 using namespace std;
 
